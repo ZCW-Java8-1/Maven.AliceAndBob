@@ -6,14 +6,21 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args ){
-	Scanner userInput = new Scanner(System.in);
+    public static void main(String[] args) {
+    Scanner userInput = new Scanner(System.in);
 	Scanner userInputNext = new Scanner(System.in);
 
-	Systems.out.println("Enter your name");
-	
-	String name = myObj.nextLine();
-	System.out.println("Name is: " + userInput);
+	Condition(userInput);
 
     }
+
+	static void Condition(Scanner userInput) {
+	if(userInput.equals("Alice") || userInput.equals("Bob")){
+	String name = userInput.nextLine();
+	System.out.println("Name is: " + name);
+		
+	}
+	
+}
+
 }
