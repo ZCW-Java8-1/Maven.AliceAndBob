@@ -4,23 +4,19 @@
 
 import java.util.Scanner;
 
+
 public class Main {
 
-    public static void main(String[] args) {
-    Scanner userInput = new Scanner(System.in);
-	Scanner userInputNext = new Scanner(System.in);
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Please enter your name");
 
-	Condition(userInput);
+		String userInput = input.nextLine();
 
-    }
-
-	static void Condition(Scanner userInput) {
-	if(userInput.equals("Alice") || userInput.equals("Bob")){
-	String name = userInput.nextLine();
-	System.out.println("Name is: " + name);
-		
+		if(userInput.equalsIgnoreCase("Alice") || userInput.equalsIgnoreCase("Bob")) {
+			System.out.println("Hi " + userInput);
+		} else {
+			System.out.println("Wrong name");
+		}
 	}
-	
-}
-
 }
